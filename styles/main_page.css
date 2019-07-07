@@ -1,0 +1,15 @@
+.profile-icon li{
+  display:inline-block;
+  list-style-type:none;
+  height: 50px;
+}
+
+.profile-icon li img {
+  width:40px;
+  height:40px;
+  margin-right: 25px;
+}
+
+.profile-icon li img:hover {
+  opacity: 0.5;
+}
