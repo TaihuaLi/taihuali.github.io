@@ -4,7 +4,7 @@ $webmaster_email = "taihua.ray.li@gmail.com";
 
 $feedback_page = "../contact.html";
 $error_page = "./error_message.html";
-$thankyou_page = "./thank_you.html";
+$thankyou_page = "./thank_you_message.html";
 
 $email_address = $_REQUEST['email'] ;
 $comments = $_REQUEST['message'] ;
