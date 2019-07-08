@@ -45,6 +45,44 @@
 		</div>
 		<!-- navigation bar end -->
 
+		<!-- contact me form -->
+		<div class="container my-5">
+			<form class="justify-content-center" method="post" action="email/send_email.php">
+					<div class="form-row">
+						<div class="form-col col-md-6">
+							<label for="fname">First Name</label>
+							<input type="text" class="form-control" id="fname" name="fname" required>
+						</div>
+						<div class="form-col col-md-6">
+							<label for="lname">Last Name</label>
+							<input type="text" class="form-control" id="lname" name"lname">
+						</div>
+					</div>
+
+					<div class="form-row my-3">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+						<small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+					</div>
+
+					<div class="form-row my-3">
+						<label for="msg">Message</label>
+						<textarea class="form-control" id="msg" rows="12" name="message" required></textarea>
+					</div>
+
+					<div class="form-check my-3">
+				    <input type="checkbox" class="form-check-input" id="consentCheck" required>
+				    <label class="form-check-label" for="consentCheck">
+							<div><span style="color:#ff0000;">I</span><span style="color:#ff2a00;">'</span><span style="color:#ff5500;">m</span><span style="color:#ff7f00;"> </span><span style="color:#ffbf00;">n</span><span style="color:#ffff00;">o</span><span style="color:#aaff00;">t</span><span style="color:#55ff00;"> </span><span style="color:#00ff00;">a</span><span style="color:#00ff80;"> </span><span style="color:#00ffff;">r</span><span style="color:#00aaff;">o</span><span style="color:#0055ff;">b</span><span style="color:#0000ff;">o</span><span style="color:#4600ff;">t</span><span style="color:#8b00ff;">🤖</span></div>
+						</label>
+				  </div>
+
+					<button type="submit" class="btn btn-dark my-3" value="Send">Send</button>
+					<button type="reset" class="btn btn-dark my-3" value="Reset">Reset</button>
+			</form>
+		</div>
+		<!-- contact me form end -->
+
 		<!-- copyright -->
 		<footer class="page-footer">
 			<div class="text-center fixed-bottom font-weight-lighter text-muted font-italic" style="font-size:12px; font-family: Times New Roman;">
