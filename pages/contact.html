@@ -55,13 +55,25 @@
 
 					<div class="form-row my-3">
 						<label for="email">E-mail</label>
-						<input type="email" class="form-control" id="email" name="_replyto" required>
+						<input type="email" class="form-control" id="email" name="email" required>
 						<small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
 					</div>
 
 					<div class="form-row my-3">
+						<label for="itype">Message Type</label>
+						<select class="form-control" id="itype" name="itype" required>
+							<option value="" selected disabled hidden>----</option>
+							<option>Networking</option>
+							<option>Inquire for a project</option>
+							<option>Job opportunity</option>
+							<option>Pro bono/Volunteer opportunity</option>
+							<option>Other</option>
+						</select>
+					</div>
+
+					<div class="form-row my-3">
 						<label for="msg">Message</label>
-						<textarea class="form-control" id="msg" rows="12" name="message" required></textarea>
+						<textarea class="form-control" id="msg" rows="8" name="message" required></textarea>
 					</div>
 
 					<div class="form-check my-3">
