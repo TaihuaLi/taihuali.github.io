@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- additional stylesheets -->
+		<link rel="stylesheet" href="../styles/resume.css" type="text/css">
 		<link rel="icon" href="../img/logo.png" type="image/icon type">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 		<title>Taihua's Resume</title>
 	</head>
 
-	<body style="font-family: 'Roboto Mono', monospace;">
+	<body style="font-family: 'Roboto Mono', monospace; background-color: rgba(240, 242, 231, 0.6)">
 		<!-- navigation bar -->
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -44,17 +45,61 @@
 			</nav>
 		</div>
 		<!-- navigation bar end -->
+		<div class="container-fluid my-5" style="width: 55%">
+			<div class="row">
+				<h1 class="text-center" style="font-family: 'Courier New', Courier, monospace"> It's all about Data. </h1>
+			</div>
+			<hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
 
+			<div class="row">
+				<div class="col-sm-2">
+					<p style="font-size: 120%;">&raquo; EXPERTISE</p>
+				</div>
 
-		<p class="text-center"> Coming soon...</p>
+				<div class="col-sm-10">
+					<div class="row">
+						<div class="col-sm-10">
+							<p class="text-muted" style="font-size: 110%;"><u>Tools & Technologies</u></p>
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="skill-btn"> Python
+								<span class="skill-desc"> I've been using Python for 5 years and it's my main language for both data science and data engineering work. In addition, I've taught college-level Python at DePaul University and professional-level Python at General Assembly.</span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="skill-btn"> SQL
+								<span class="skill-desc"> I self-taught SQL in 2015 and have been using it since. Currently, I am using SQL extensively at work for data engineering tasks, such as building ETL pipeline tasks. </span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="skill-btn"> Java
+								<span class="skill-desc"> Coming from non-CS background, I self-taught Java in 2016 to learn to build functional recommender systems. At my current work, I am able to deploy data science models in Java using PMML. </span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="skill-btn"> R
+								<span class="skill-desc"> I used R from 2014 to 2017, when I was in academia. Though I don't use it extensively at work, I can pick it back up within hours. </span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="skill-btn"> Matlab
+								<span class="skill-desc"> I used Matlab for graduate school's image processing and computer vision research, and I have built several deep learning applications in Matlab using its object-oriented programming functionalities. Due to its costly licensing fee, I have not used it in the industry work. </span>
+							</div>
+						</div>
+					</div>
 
+				</div>
+			</div>
 
+		</div>
 
 		<!-- copyright -->
 		<footer class="page-footer">
 			<div class="text-center fixed-bottom font-weight-lighter text-muted font-italic" style="font-size:12px; font-family: Times New Roman;">
-				© 2019 Taihua Li All Rights Reserved
+				&copy;2019 Taihua Li All Rights Reserved
 			</div>
 		</footer>
 		<!-- copyright end -->
