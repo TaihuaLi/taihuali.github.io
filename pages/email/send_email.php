@@ -11,7 +11,7 @@ $comments = $_REQUEST['message'] ;
 $first_name = $_REQUEST['fname'] ;
 $last_name = $_REQUEST['lname'];
 $msg =
-"Name: " . $first_name $last_name. "\r\n" .
+"Name: " . $first_name. "\r\n" .
 "Email: " . $email_address . "\r\n" .
 "Comments: " . $comments ;
 
