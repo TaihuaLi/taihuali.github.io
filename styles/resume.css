@@ -34,3 +34,11 @@ hr {
   background-image:
   linear-gradient(to right, #ccc, #333, #ccc);
 }
+
+.resume-subtitle {
+  font-size: 90%;
+}
+
+.resume-content {
+  font-size: 80%;
+}
