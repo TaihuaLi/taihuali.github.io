@@ -1,18 +1,20 @@
 .intro-containter {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
 }
 
 .my-name{
     margin: 0 auto;
     border-right: 2px solid rgb(0,0,0);
-    font-size: 300%;
     white-space: nowrap;
     overflow: hidden;
     animation: typewriter 2s steps(40) 0.5s 1 normal both,
                blinkTextCursor 500ms steps(44) infinite normal;
+    font-size: 3em;
+}
+
+.my-title {
+  font-size: 2em;
 }
 
 @keyframes typewriter{
