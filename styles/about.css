@@ -5,3 +5,22 @@ hr {
   background-image:
   linear-gradient(to right, #ccc, #333, #ccc);
 }
+
+.sub-title {
+  font-size: 1.8em;
+  font-family: 'Special Elite', cursive;
+}
+
+.sub-content {
+  font-size: 0.9em;
+}
+
+.carousel {
+  height:400px;
+  background-color: Black;
+}
+
+.carousel-inner .carousel-item img {
+height:400px;
+object-fit: contain;
+}

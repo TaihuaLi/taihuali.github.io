@@ -1,6 +1,6 @@
 .intro-containter {
   position: fixed;
-  top: 30%;
+  top: 35%;
 }
 
 .my-name{
@@ -19,7 +19,7 @@
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 16.3em;}
+  to{width: 17.5em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgb(0,0,0);}
