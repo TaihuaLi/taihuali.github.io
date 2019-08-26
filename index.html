@@ -9,100 +9,66 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- additional stylesheets -->
-		<link rel="stylesheet" href="styles/main_page.css">
-		<link rel="icon" href="img/logo.png" type="image/icon type">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-		<title>Taihua Li's Website</title>
+		<link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/shared.css" type="text/css">
+		<link rel="stylesheet" href="css/landing-page.css">
+		<link rel="icon" href="img/seal.jpg" type="image/icon type">
+		<title>Taihua Li</title>
+
 	</head>
 
-	<body style="font-family: 'Roboto Mono', monospace; background-color: rgba(240, 242, 231, 0.6)">
-		<!-- navigation bar -->
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light">
-			  <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" style="width:35px; height:35px;"/></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
+	<body>
 
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
-			      </li>
-						<li class="nav-item">
-							<a class="nav-link" href="pages/about.html">About Me</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="pages/project.html">Projects</a>
-						</li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="pages/resume.html">Resume</a>
-			      </li>
-						<li class="nav-item">
-							<a class="nav-link" href="pages/contact.html">Contact Me</a>
-						</li>
-			  </div>
-			</nav>
-			<hr>
-		</div>
-		<!-- navigation bar end -->
+		<div class="container px-2">
 
-		<!-- Intro -->
-	  <div class="container-fluid intro-containter">
-			<div class="row text-center">
-				<p class="font-weight-lighter my-name col-xs-12">Hello! I'm Taihua (Ray) Li.👋</p>
+			<!-- intro -->
+			<div class="row my-5 fadein-order-1">
+				<div class="col-sm-12">
+					<div class="text-center">
+						<img src="img/seal.jpg" class="rounded" alt="logo">
+					</div>
+				</div>
 			</div>
 
-			<div class="row justify-content-center">
-				<p class="font-weight-lighter text-muted my-2 my-title">data scientist + data engineer</p>
-			</div>
-
-			<div class="row justify-content-center text-uppercase">
-				<p class="font-weight-lighter text-muted my-2 my-location">Chicago, IL</p>
-			</div>
-
-			<!-- other profiles -->
-			<div class="row justify-content-center my-4">
-				<ul class="profile-icon">
-					<li>
-						<a href="https://www.linkedin.com/in/taihuali/" target="_blank">
-							<img src="img/icon/linkedin.png" alt="linkedin profile"/>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/TaihuaLi" target="_blank">
-							<img src="img/icon/github.png" alt="github profile"/>
-						</a>
-					</li>
-					<li>
-						<a href="pages/contact.html">
-							<img src="img/icon/gmail.png" alt="personal email"/>
-						</a>
-					</li>
-					<li>
-						<a href="https://scholar.google.com/citations?user=CuRcbboAAAAJ&hl=en" target="_blank">
-							<img src="img/icon/scholar.png" alt="Google Scholar profile"/>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!-- other profiles end -->
-
-			<div class="row">
-				<div class="col">
-					<p class="text-center font-weight-light text-uppercase" style="font-size:0.7em; opacity: 0.5;">
-						Use desktop/laptop browsers for the best experience.
+			<div class="row my-4 fadein-order-2">
+				<div class="col-sm-12">
+					<p class="text-center h1">
+					  Welcome! My name is <span class="font-weight-bold">Taihua Li</span>.<br>
+						<span class="h4 text-muted font-weight-light">Data Scientist | Techie | Innovator</span>
 					</p>
 				</div>
 			</div>
 
+			<div class="row my-4 fadein-order-3">
+				<div class="col-sm-12 text-center">
+					<a role="button" class="btn btn-dark start-btn" href="pages/about.html">Enter</a>
+				</div>
+			</div>
+
+			<div class="row my-3 fadein-order-3">
+				<div class="col-sm-12 text-center social-media-icons">
+					<a href="https://www.linkedin.com/in/taihuali/" target="_blank">
+						<img src="img/icon/linkedin.png" alt="linkedin profile"/>
+					</a>
+					<a href="https://github.com/TaihuaLi" target="_blank">
+						<img src="img/icon/github.png" alt="github profile"/>
+					</a>
+					<a href="pages/contact.html">
+						<img src="img/icon/gmail.png" alt="contact me"/>
+					</a>
+					<a href="https://scholar.google.com/citations?user=CuRcbboAAAAJ&hl=en" target="_blank">
+						<img src="img/icon/scholar.png" alt="Google Scholar profile"/>
+					</a>
+				</div>
+			</div>
+
+			<!-- intro end -->
 		</div>
-	  <!-- Intro ened -->
 
 		<!-- copyright -->
 		<footer class="page-footer">
-			<div class="text-left fixed-bottom font-weight-lighter text-muted font-italic" style="font-size:12px; font-family: Times New Roman;">
-				&copy;2019 Taihua Li All Rights Reserved
+			<div class="text-center fixed-bottom font-weight-lighter text-muted copyright-text">
+				&copy; 2019 Taihua Li
 			</div>
 		</footer>
 		<!-- copyright end -->
@@ -113,4 +79,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
+
 </html>

@@ -9,106 +9,126 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- additional stylesheets -->
-		<link rel="stylesheet" href="../styles/contact.css" type="text/css">
-		<link rel="icon" href="../img/logo.png" type="image/icon type">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-		<title>Contact Taihua</title>
+		<link href="https://fonts.googleapis.com/css?family=Amiri|Hepta+Slab|Staatliches&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/shared.css" type="text/css">
+		<link rel="stylesheet" href="../css/contact-page.css" type="text/css">
+		<link rel="icon" href="../img/seal.jpg" type="image/icon type">
+		<title>Contact Me</title>
 	</head>
 
-	<body style="font-family: 'Roboto Mono', monospace; background-color: rgba(240, 242, 231, 0.6)">
+	<body>
+
 		<!-- navigation bar -->
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
-			  <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="logo" style="width:35px; height:35px;"/></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <a class="navbar-brand" href="../index.html">
+					<img src="../img/seal.jpg" alt="logo" style="width:35px; height:35px;"/>
+				</a>
+
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <div class="collapse navbar-collapse" id="navbarContent">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item">
 			        <a class="nav-link" href="../index.html">Home</a>
 			      </li>
 						<li class="nav-item">
-							<a class="nav-link" href="./about.html">About Me</a>
+							<a class="nav-link" href="./about.html">About</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="./project.html">Projects</a>
+            <li class="nav-item">
+							<a class="nav-link" href="./articles.html">Articles</a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="./talks.html">Talks</a>
 						</li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="./resume.html">Resume</a>
+			        <a class="nav-link" href="./cv.html">Curriculum Vitae</a>
 			      </li>
 						<li class="nav-item active">
-							<a class="nav-link" href="">Contact Me<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="./contact.html">Contact</a>
 						</li>
 			  </div>
 			</nav>
-			<hr>
 		</div>
 		<!-- navigation bar end -->
 
-		<!-- contact me form -->
-		<div class="container my-3" style="width: 40%;">
-			<p class="font-italic text-center"> You're Awesome! Let's Talk! </p>
-			<hr style="border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);">
-
-			<div class="row my-3">
-				<p class="text-center"> Please message me directly on <a href="https://www.linkedin.com/in/taihuali/" target="_blank">LinkedIn</a> or email me using the link below, and I will get back to you within 24 hours.</p>
+		<div class="container fadein-order-1 my-5">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-center text-content">
+						Please message me directly on <a href="https://www.linkedin.com/in/taihuali/" target="_blank">LinkedIn</a>
+						or email me using the form below.
+					</p>
+				</div>
 			</div>
 
 			<div class="row justify-content-center">
-				<button class="btn btn-link" data-toggle="collapse" data-target="#email-form" aria-expanded="true" aria-controls="email-form">
-					Click Here to E-mail Me.
-				</button>
+				<form id="email-form" action="https://formspree.io/taihua.ray.li@gmail.com" method="POST">
+					<div class="form-row">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</div>
 
-				<form id="email-form" class="collapse" action="https://formspree.io/taihua.ray.li@gmail.com" method="POST">
-						<div class="form-row">
-							<label for="name">Name</label>
-							<input type="text" class="form-control" id="name" name="name" required>
-						</div>
+					<div class="form-row my-3">
+						<label for="email">E-mail</label>
+						<input type="email" class="form-control" id="email" name="email" required>
+						<small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+					</div>
 
-						<div class="form-row my-3">
-							<label for="email">E-mail</label>
-							<input type="email" class="form-control" id="email" name="email" required>
-							<small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-						</div>
+					<div class="form-row my-3">
+						<label for="itype">Message Type</label>
+						<select class="form-control" id="itype" name="itype" required>
+							<option value="" selected disabled hidden>----</option>
+							<option>Networking</option>
+							<option>Volunteer opportunity</option>
+							<option>Speaker opportunity</option>
+							<option>Let's grab a coffee!</option>
+							<option>Other</option>
+						</select>
+					</div>
 
-						<div class="form-row my-3">
-							<label for="itype">Message Type</label>
-							<select class="form-control" id="itype" name="itype" required>
-								<option value="" selected disabled hidden>----</option>
-								<option>Networking</option>
-								<option>Job opportunity</option>
-								<option>Pro bono/Volunteer opportunity</option>
-								<option>Let's grab a coffee!</option>
-								<option>Other</option>
-							</select>
-						</div>
+					<div class="form-row my-3">
+						<label for="msg">Message</label>
+						<textarea class="form-control" id="msg" rows="8" name="message" required></textarea>
+					</div>
 
-						<div class="form-row my-3">
-							<label for="msg">Message</label>
-							<textarea class="form-control" id="msg" rows="8" name="message" required></textarea>
-						</div>
+					<div class="form-check my-3">
+				    <input type="checkbox" class="form-check-input" id="consentCheck" required>
+				    <label class="form-check-label" for="consentCheck">
+							<div>
+								<span style="color:#ff0000;">I</span>
+								<span style="color:#ff2a00;">'</span>
+								<span style="color:#ff5500;">m</span>
+								<span style="color:#ff7f00;"> </span>
+								<span style="color:#ffbf00;">n</span>
+								<span style="color:#ffff00;">o</span>
+								<span style="color:#aaff00;">t</span>
+								<span style="color:#55ff00;"> </span>
+								<span style="color:#00ff00;">a</span>
+								<span style="color:#00ff80;"> </span>
+								<span style="color:#00ffff;">r</span>
+								<span style="color:#00aaff;">o</span>
+								<span style="color:#0055ff;">b</span>
+								<span style="color:#0000ff;">o</span>
+								<span style="color:#4600ff;">t</span>
+								<span style="color:#8b00ff;">🤖</span>
+							</div>
+						</label>
+				  </div>
 
-						<div class="form-check my-3">
-					    <input type="checkbox" class="form-check-input" id="consentCheck" required>
-					    <label class="form-check-label" for="consentCheck">
-								<div><span style="color:#ff0000;">I</span><span style="color:#ff2a00;">'</span><span style="color:#ff5500;">m</span><span style="color:#ff7f00;"> </span><span style="color:#ffbf00;">n</span><span style="color:#ffff00;">o</span><span style="color:#aaff00;">t</span><span style="color:#55ff00;"> </span><span style="color:#00ff00;">a</span><span style="color:#00ff80;"> </span><span style="color:#00ffff;">r</span><span style="color:#00aaff;">o</span><span style="color:#0055ff;">b</span><span style="color:#0000ff;">o</span><span style="color:#4600ff;">t</span><span style="color:#8b00ff;">🤖</span></div>
-							</label>
-					  </div>
-
-						<button type="submit" class="btn btn-dark my-3" value="Send">Send</button>
-						<button type="reset" class="btn btn-dark my-3" value="Reset">Reset</button><br>
-						<small id="credit" class="text-muted">Credit: <a href="http://formspree.io" target="_blank">Formspree</a> (free E-mail contact form service)</small>
+					<button type="submit" class="btn btn-dark my-3" value="Send">Send</button>
+					<button type="reset" class="btn btn-dark my-3" value="Reset">Reset</button><br>
+					<small id="credit" class="text-muted">Credit: <a href="http://formspree.io" target="_blank">Formspree</a> (free E-mail contact form service)</small>
 				</form>
 			</div>
 		</div>
-		<!-- contact me form end -->
 
 		<!-- copyright -->
-		<footer class="page-footer my-3">
-			<div class="text-center align-bottom font-weight-lighter text-muted font-italic" style="font-size:12px; font-family: Times New Roman;">
-				&copy;2019 Taihua Li All Rights Reserved
+		<footer class="page-footer">
+			<div class="text-center fixed-bottom font-weight-lighter text-muted copyright-text">
+				&copy; 2019 Taihua Li
 			</div>
 		</footer>
 		<!-- copyright end -->
