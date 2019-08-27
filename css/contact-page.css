@@ -6,3 +6,10 @@
 label, button {
   font-family: 'Hepta Slab', serif;
 }
+
+.vertical-center {
+  min-height: 90%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
