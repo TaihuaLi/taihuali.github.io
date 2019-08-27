@@ -8,8 +8,8 @@ div img {
 }
 
 .my-5 {
-  padding-top: 8rem !important;
-  padding-bottom: 0.5rem !important;
+  padding-top: 5rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .titles {
@@ -24,4 +24,8 @@ div img {
   height: auto;
   width: 4em;
   padding: 15px;
+}
+
+.my-3 {
+  padding-bottom: 2rem !important;
 }
