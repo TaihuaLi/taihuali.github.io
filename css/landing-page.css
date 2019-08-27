@@ -7,8 +7,7 @@ div img {
   width: 10em;
 }
 
-.my-5 {
-  padding-top: 5rem !important;
+.mb-5 {
   padding-bottom: 2rem !important;
 }
 
@@ -26,6 +25,9 @@ div img {
   padding: 15px;
 }
 
-.my-3 {
-  padding-bottom: 2rem !important;
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
